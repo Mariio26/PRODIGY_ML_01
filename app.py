@@ -26,6 +26,6 @@ my_pipeline.fit(X_train)
 new_data = pd.DataFrame({'ZN': [20], 'RM': [6]})
 new_data_preprocessed = my_pipeline.transform(new_data)
 
-# Use the preprocessed new data to make predictions
+# Use the preprocessed new data to make predictions and to print them
 predicted_price = loaded_model.predict(new_data_preprocessed)
 print("Predicted Price:", predicted_price)
